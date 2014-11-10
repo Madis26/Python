@@ -1,32 +1,18 @@
 ﻿#Isikukoodi genereerimise programm. Programm ei arvesta liigaastaga.
 
 import random
+import datetime
 
 # Panin for tsükkli sisse, et korraga rohkem tulemusi saada testimiseks.
-for turn in range(100):
-  turn + 1
+year = random.choice(range(1800, 2199))
+month = random.choice(range(1, 12))
+day = random.choice(range(1, 31))
+print (year)
+
+def generate_isikukood():
+
   
-
-  #Defineerin 11 kohta isikukoodile.
-  ik_1 = 0
-
-  ik_2 = 0
-  ik_3 = 0
-
-  ik_4 = 0
-  ik_5 = 0
-
-  ik_6 = 0
-  ik_7 = 0
-
-  ik_8 = 0
-  ik_9 = 0
-  ik_10 = 0
-
-  ik_11 = 0
-
-
-
+  
   #Sugu
   ik_1 = random.randint(1,7)
 
@@ -132,6 +118,8 @@ for turn in range(100):
 
 
   print ("Isikukood on: ", isikukood)
+
+
 
 
 
